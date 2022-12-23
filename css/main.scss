@@ -11,6 +11,20 @@ a.logo {
   font-weight: 700;
 }
 
+.active {
+  position: relative;
+}
+
+.active:before {
+  content: '';
+  position: absolute;
+  background-color: black;
+  width: 50%;
+  height: 2px;
+  left: 0;
+  bottom: -3px;
+}
+
 
 header {
   padding: 2rem 0;
@@ -269,6 +283,7 @@ footer {
   
       .cta-btn {
         display: inline-block;
+        cursor: pointer;
         padding: .4em 1.2em;
         font-weight: 700;
         border-radius: .4em;
@@ -284,6 +299,10 @@ footer {
     .left-col {
       text-align: left;
 
+      svg.hide-tablet {
+        display: none;
+      }
+      
       h1 {
         font-size: 4.5rem;
         max-width: 860px;
@@ -414,6 +433,10 @@ footer {
         padding-right: 3rem;
         padding-bottom: 9rem;
         border-bottom: 0;
+
+        svg.hide-tablet {
+          display: inline-block;
+        }
       }
   
       .right-col {

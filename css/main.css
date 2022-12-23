@@ -61,6 +61,20 @@ a.logo {
   font-weight: 700;
 }
 
+.active {
+  position: relative;
+}
+
+.active:before {
+  content: "";
+  position: absolute;
+  background-color: black;
+  width: 50%;
+  height: 2px;
+  left: 0;
+  bottom: -3px;
+}
+
 header {
   padding: 2rem 0;
   border-bottom: 1px solid black;
@@ -273,6 +287,7 @@ footer .footer .copyright {
   }
   header .navbar .cta-btn {
     display: inline-block;
+    cursor: pointer;
     padding: 0.4em 1.2em;
     font-weight: 700;
     border-radius: 0.4em;
@@ -281,6 +296,9 @@ footer .footer .copyright {
   }
   section.hero .left-col {
     text-align: left;
+  }
+  section.hero .left-col svg.hide-tablet {
+    display: none;
   }
   section.hero .left-col h1 {
     font-size: 4.5rem;
@@ -377,6 +395,9 @@ section.hero .hero-container .right-col {
     padding-right: 3rem;
     padding-bottom: 9rem;
     border-bottom: 0;
+  }
+  section.hero .hero-container .left-col svg.hide-tablet {
+    display: inline-block;
   }
   section.hero .hero-container .right-col {
     display: flex;
