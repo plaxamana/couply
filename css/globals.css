@@ -3,6 +3,7 @@
   --primary-color-tint: #C6DBBD;
   --primary-color: #9BC588;
   --font-family: "Nunito", sans-serif;
+  --box-shadow: 4px 4px 0px #000000;
 }
 
 html {
