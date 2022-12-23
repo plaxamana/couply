@@ -27,7 +27,7 @@
           <path d="M18 27H4.5V24H18V27ZM31.5 19.5H4.5V16.5H31.5V19.5ZM31.5 12H18V9H31.5V12Z" fill="black" />
         </svg>
 
-        <ul class="nav">
+        <ul class="nav hide-mobile">
           <li><a href="#" class="active">Home</a></li>
           <li><a href="#">Coupons</a></li>
           <li><a href="#">FAQ</a></li>
@@ -47,57 +47,61 @@
   </header>
 
   <section class="hero">
-    <div class="wrapper">
+    <div class="hero-container">
       <div class="left-col">
-        <h1>Shopping with coupons, applied automatically!</h1>
+        <div class="wrapper">
+          <h1>Shopping with coupons, applied automatically!</h1>
 
-        <div class="usage">
-          <div class="usage-left">
-            <p>Used by over 500,000 peeps</p>
-            <div class="users">
-              <img class="user" src="assets/users/user1.jpeg" alt="User 1">
-              <img class="user" src="assets/users/user2.jpeg" alt="User 2">
-              <img class="user" src="assets/users/user3.jpeg" alt="User 3">
-              <img class="user" src="assets/users/user4.jpeg" alt="User 4">
-              <img class="user" src="assets/users/user5.jpeg" alt="User 5">
+          <div class="usage">
+            <div class="usage-left">
+              <p>Used by over 500,000 peeps</p>
+              <div class="users">
+                <img class="user" src="assets/users/user_1.jpg" alt="User 1">
+                <img class="user" src="assets/users/user_2.jpg" alt="User 2">
+                <img class="user" src="assets/users/user_3.jpg" alt="User 3">
+                <img class="user" src="assets/users/user_4.jpg" alt="User 4">
+                <img class="user" src="assets/users/user_5.jpg" alt="User 5">
+              </div>
             </div>
-          </div>
-          <div class="usage-right hide-mobile">
-            <img src="assets/user6.jpeg" alt="Jane Doe">
-            <div>
-              <p>Holy sh*t, I saved $500!</p>
-              <strong>- Jane Doe</strong>
+            <div class="usage-right hide-mobile">
+              <img src="assets/user6.jpeg" alt="Jane Doe">
+              <div>
+                <p>Holy sh*t, I saved $500!</p>
+                <strong>- Jane Doe</strong>
+              </div>
             </div>
           </div>
         </div>
       </div>
 
       <div class="right-col">
-        <ul>
-          <li>
-            <div>1</div>
-            Download the Extension for Chrome or Firefox.
-          </li>
-          <li>
-            <div>2</div>
-            Visit your favorite online retailers.
-          </li>
-          <li>
-            <div>3</div>
-            <p>
-              <span>Save!</span> Apply coupons from the toolbar.
-            </p>
-          </li>
-        </ul>
+        <div class="wrapper">
+          <ul>
+            <li>
+              <div class="step">1</div>
+              Download the Extension for Chrome or Firefox.
+            </li>
+            <li>
+              <div class="step">2</div>
+              Visit your favorite online retailers.
+            </li>
+            <li>
+              <div class="step">3</div>
+              <div>
+                <span>Save!</span> Apply coupons from the toolbar.
+              </div>
+            </li>
+          </ul>
 
-        <a href="#" class="cta-btn primary">
-          Install Extension
-          <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M5.46967 12.0303C5.76256 12.3232 6.23744 12.3232 6.53033 12.0303L11.3033 7.25736C11.5962 6.96447 11.5962 6.48959 11.3033 6.1967C11.0104 5.90381 10.5355 5.90381 10.2426 6.1967L6 10.4393L1.75736 6.1967C1.46447 5.90381 0.989592 5.90381 0.696699 6.1967C0.403805 6.48959 0.403805 6.96447 0.696699 7.25736L5.46967 12.0303ZM5.25 0.5L5.25 11.5L6.75 11.5L6.75 0.5L5.25 0.5Z"
-              fill="black" />
-          </svg>
-        </a>
+          <a href="#" class="cta-btn primary">
+            Install Extension
+            <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M5.46967 12.0303C5.76256 12.3232 6.23744 12.3232 6.53033 12.0303L11.3033 7.25736C11.5962 6.96447 11.5962 6.48959 11.3033 6.1967C11.0104 5.90381 10.5355 5.90381 10.2426 6.1967L6 10.4393L1.75736 6.1967C1.46447 5.90381 0.989592 5.90381 0.696699 6.1967C0.403805 6.48959 0.403805 6.96447 0.696699 7.25736L5.46967 12.0303ZM5.25 0.5L5.25 11.5L6.75 11.5L6.75 0.5L5.25 0.5Z"
+                fill="black" />
+            </svg>
+          </a>
+        </div>
       </div>
     </div>
   </section>
@@ -109,7 +113,7 @@
       <img src="assets/brands/Shopify.svg" alt="Shopify">
       <img src="assets/brands/Walmart.svg" alt="Walmart.svg">
 
-      <div class="view-more">
+      <div class="view-more hide-mobile">
         <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path
             d="M21.257 11.462C21.731 12.082 21.731 12.919 21.257 13.538C19.764 15.487 16.182 19.5 12 19.5C7.818 19.5 4.236 15.487 2.743 13.538C2.51238 13.2411 2.38719 12.8759 2.38719 12.5C2.38719 12.1241 2.51238 11.7589 2.743 11.462C4.236 9.513 7.818 5.5 12 5.5C16.182 5.5 19.764 9.513 21.257 11.462V11.462Z"
@@ -129,49 +133,49 @@
         <div class="card">
           <div class="card-header">
             <h2>Women's Nike Shoes</h2>
-            <img src="assets/inventory/shoes.jpeg" alt="Women's Nike Shoes">
-            <div class="price">$69</div>
           </div>
+          <img src="assets/inventory/shoes.jpeg" alt="Women's Nike Shoes">
+          <div class="price">$69</div>
         </div>
         <div class="card">
           <div class="card-header">
             <h2>Quirky Arrows</h2>
-            <img src="assets/inventory/arrows.jpeg" alt="Quirky Arrows">
-            <div class="price">$69</div>
           </div>
+          <img src="assets/inventory/arrows.jpeg" alt="Quirky Arrows">
+          <div class="price">$69</div>
         </div>
         <div class="card">
           <div class="card-header">
             <h2>Sony Noise Cancelling Headphones</h2>
-            <img src="assets/inventory/headphones.jpeg" alt="Sony Noise Cancelling Headphones">
-            <div class="price">$69</div>
           </div>
+          <img src="assets/inventory/headphones.jpeg" alt="Sony Noise Cancelling Headphones">
+          <div class="price">$69</div>
         </div>
         <div class="card">
           <div class="card-header">
             <h2>Women's Heels</h2>
-            <img src="assets/inventory/heels.jpeg" alt="Women's Heels">
-            <div class="price">$69</div>
           </div>
+          <img src="assets/inventory/heels.jpeg" alt="Women's Heels">
+          <div class="price">$69</div>
         </div>
         <div class="card">
           <div class="card-header">
             <h2>Accessories</h2>
-            <img src="assets/inventory/accessories.jpeg" alt="Accessories">
-            <div class="price">$69</div>
           </div>
+          <img src="assets/inventory/accessories.jpeg" alt="Accessories">
+          <div class="price">$69</div>
         </div>
         <div class="card">
           <div class="card-header">
             <h2>Ginger Shots</h2>
-            <img src="assets/inventory/ginger-shots.jpeg" alt="Ginger Shots">
-            <div class="price">$69</div>
           </div>
+          <img src="assets/inventory/ginger-shots.jpeg" alt="Ginger Shots">
+          <div class="price">$69</div>
         </div>
       </div>
 
       <div class="view-more">
-        <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg viewBox="0 0 24 25" xmlns="http://www.w3.org/2000/svg">
           <path
             d="M21.257 11.462C21.731 12.082 21.731 12.919 21.257 13.538C19.764 15.487 16.182 19.5 12 19.5C7.818 19.5 4.236 15.487 2.743 13.538C2.51238 13.2411 2.38719 12.8759 2.38719 12.5C2.38719 12.1241 2.51238 11.7589 2.743 11.462C4.236 9.513 7.818 5.5 12 5.5C16.182 5.5 19.764 9.513 21.257 11.462V11.462Z"
             stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
@@ -206,11 +210,11 @@
         <li><a href="#">Coupons</a></li>
         <li><a href="#">FAQ</a></li>
         <li><a href="#">Contact</a></li>
-      </ul>
 
-      <div class="copyright">
-        Copyright 2022-2023 @ Couply LLC
-      </div>
+        <div class="copyright">
+          Copyright 2022-2023 @ Couply LLC
+        </div>
+      </ul>
     </div>
   </footer>
 </body>

@@ -23,8 +23,17 @@ a {
   font-size: 1.8rem;
 }
 
+h1 {
+  font-size: 3.2rem;
+  font-weight: 700;
+}
+
 .hide-mobile {
   display: none;
+}
+
+.wrapper {
+  margin: 0 2em;
 }
 
 @media only screen and (min-width: 850px) {

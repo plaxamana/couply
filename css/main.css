@@ -3,6 +3,7 @@
   --primary-color-tint: #C6DBBD;
   --primary-color: #9BC588;
   --font-family: "Nunito", sans-serif;
+  --box-shadow: 4px 4px 0px #000000;
 }
 
 html {
@@ -28,8 +29,17 @@ a {
   font-size: 1.8rem;
 }
 
+h1 {
+  font-size: 3.2rem;
+  font-weight: 700;
+}
+
 .hide-mobile {
   display: none;
+}
+
+.wrapper {
+  margin: 0 2em;
 }
 
 @media only screen and (min-width: 850px) {
@@ -38,5 +48,203 @@ a {
   }
 }
 a.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
   font-size: 2.4rem;
+  font-weight: 700;
+}
+
+header {
+  padding: 2rem 0;
+  border-bottom: 1px solid black;
+}
+header .navbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+section.hero .left-col {
+  text-align: center;
+  padding: 4rem 0;
+  border-bottom: 1px solid black;
+}
+section.hero .left-col .usage-left p {
+  font-size: 1.6rem;
+}
+section.hero .left-col .usage-left .users {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+section.hero .left-col .usage-left .users .user {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border: 5px solid white;
+  margin-left: -1.5em;
+}
+section.hero .left-col .usage-left .users .user:nth-of-type(1) {
+  margin-left: 0;
+  border: 0;
+}
+section.hero .right-col {
+  padding: 4rem 0;
+}
+section.hero .right-col ul {
+  display: flex;
+  flex-direction: column;
+  gap: 3.5rem;
+  margin-bottom: 4.5rem;
+}
+section.hero .right-col ul li {
+  display: flex;
+  gap: 2rem;
+  font-size: 2rem;
+}
+section.hero .right-col ul li div.step {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: 700;
+  font-size: 1.6rem;
+  width: 30px;
+  height: 30px;
+  background: black;
+  border-radius: 50%;
+}
+section.hero .right-col ul li span {
+  font-weight: 700;
+  color: #608A4D;
+}
+section.hero .right-col .primary {
+  background-color: var(--primary-color);
+}
+section.hero .right-col .cta-btn {
+  display: block;
+  text-align: center;
+  border: 2px solid black;
+  border-radius: 0.4em;
+  padding: 0.4em 1.2em;
+  font-size: 2.2rem;
+  font-weight: 700;
+  box-shadow: var(--box-shadow);
+}
+
+section.brands-section {
+  background: black;
+  padding: 6rem 0 16rem 0;
+}
+section.brands-section .brands {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5rem;
+}
+section.brands-section .brands img {
+  justify-self: center;
+}
+
+section.inventory-section {
+  background: white;
+  padding: 6rem 0;
+  border-bottom: 1px solid black;
+}
+section.inventory-section .inventory {
+  margin-top: -16rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  margin-bottom: 7rem;
+}
+section.inventory-section .inventory .card {
+  position: relative;
+  border: 2px solid black;
+  border-radius: 0.4em;
+  box-shadow: var(--box-shadow);
+  max-height: 260px;
+  overflow: hidden;
+}
+section.inventory-section .inventory .card .card-header {
+  background: white;
+  padding: 2rem;
+}
+section.inventory-section .inventory .card .card-header h2 {
+  font-size: 1.6rem;
+  margin: 0;
+}
+section.inventory-section .inventory .card .price {
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  right: 0;
+  background: black;
+  color: white;
+  font-size: 2.2rem;
+  font-weight: 700;
+  padding: 2rem;
+  border-radius: 0.4rem 0 0 0;
+}
+section.inventory-section .inventory .card img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+section.inventory-section .view-more {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+section.inventory-section .view-more svg {
+  width: 32px;
+  height: 32px;
+}
+section.inventory-section .view-more a {
+  font-size: 2.6rem;
+  font-weight: 400;
+  text-decoration: underline;
+}
+
+footer {
+  padding: 4rem 0;
+}
+footer .footer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 6rem;
+}
+footer .footer a.logo {
+  align-self: start;
+}
+footer .footer .contact {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 1.2rem;
+}
+footer .footer .contact a {
+  font-size: 1.4rem;
+}
+footer .footer .contact .socials {
+  display: flex;
+  justify-content: flex-end;
+  gap: 2.5rem;
+}
+footer .footer .nav {
+  display: flex;
+  gap: 3rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  justify-self: center;
+  grid-column: span 2;
+}
+footer .footer .copyright {
+  color: #6C7667;
+  font-size: 1.4rem;
+  text-align: center;
+  grid-column: span 2;
 }/*# sourceMappingURL=main.css.map */
