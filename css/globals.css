@@ -46,4 +46,10 @@ h1 {
   .hide-tablet {
     display: none;
   }
+}
+@media only screen and (min-width: 1200px) {
+  .wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
 }/*# sourceMappingURL=globals.css.map */

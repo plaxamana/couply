@@ -250,6 +250,7 @@ footer {
 
 // Media Queries
 
+// Tablet
 @media only screen and (min-width: 850px) {
   header {
     .navbar {
@@ -285,6 +286,7 @@ footer {
 
       h1 {
         font-size: 4.5rem;
+        max-width: 860px;
       }
 
       .stars {
@@ -338,6 +340,7 @@ footer {
         flex-direction: row;
 
         li {
+          flex: 1;
           flex-direction: column;
         }
       }
@@ -367,7 +370,6 @@ footer {
 
   footer {
     .footer {
-
       .nav {
         justify-self: end;
         grid-row: 1 / 2;
@@ -385,6 +387,77 @@ footer {
         align-self: end;
         grid-row: 2 / 3;
         grid-column: 2 / 3;
+      }
+    }
+  }
+}
+
+// Desktop
+@media only screen and (min-width: 1200px) {
+  .hide-desktop {
+    display: none !important;
+  }
+
+  section.hero {
+    .hero-container {
+      display: flex;
+      justify-content: space-between;
+      max-width: 1200px;
+      margin: 0 auto;
+
+      .left-col,
+      .right-col {
+        flex: 1;
+      }
+
+      .left-col {
+        padding-right: 3rem;
+        padding-bottom: 9rem;
+        border-bottom: 0;
+      }
+  
+      .right-col {
+        display: flex;
+        align-items: center;
+        border-left: 1px solid black;
+        padding: 4rem 0;
+
+        ul {
+          flex-direction: column;
+
+          li {
+            flex-direction: row;
+          }
+        }
+      }
+    }
+  }
+
+  section.brands-section {
+    .view-more {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+
+      a {
+        color: white;
+        font-size: 2rem;
+        font-weight: 400;
+        text-decoration: underline;
+      }
+    }
+  }
+
+  section.inventory-section {
+    .inventory {
+      grid-template-columns: 366px 1fr 1fr 300px;
+
+      .card:nth-of-type(1) {
+        grid-column: 1 / span 2;
+      }
+
+      .card:nth-of-type(5) {
+        grid-column: 2 / span 2;
       }
     }
   }
