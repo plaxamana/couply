@@ -73,14 +73,15 @@ section.hero {
         font-size: 2rem;
 
         div.step {
+          align-self: flex-start;
           display: flex;
           align-items: center;
           justify-content: center;
           color: white;
           font-weight: 700;
           font-size: 1.6rem;
-          width: 30px;
-          height: 30px;
+          min-width: 30px;
+          min-height: 30px;
           background: black;
           border-radius: 50%;
         }
